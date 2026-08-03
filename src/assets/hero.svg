@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc" />
+  <rect x="120" y="120" width="960" height="540" rx="12" fill="#ffffff" stroke="#e6e9ef" />
+  <rect x="160" y="160" width="640" height="360" rx="8" fill="#eef2ff" />
+  <rect x="840" y="160" width="200" height="140" rx="8" fill="#fff5f5" />
+  <rect x="840" y="320" width="360" height="200" rx="8" fill="#fff" stroke="#e6e9ef" />
+  <circle cx="300" cy="520" r="28" fill="#2F3A8F" />
+  <rect x="260" y="480" width="80" height="48" rx="8" fill="#fff" />
+  <text x="140" y="520" font-family="Inter, Arial" font-size="28" fill="#6b7280">Flatlay: laptop, tablet, kopi, notes</text>
+</svg>

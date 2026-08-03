@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-gray-800 font-sans;
+}
+
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+}
