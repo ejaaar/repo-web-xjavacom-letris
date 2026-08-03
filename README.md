@@ -34,3 +34,15 @@ Form behavior
 
 - If `VITE_FORMSPREE_ENDPOINT` is set the contact form will POST JSON to that endpoint.
 - Without an endpoint the form shows a demo alert and logs the payload to the console.
+
+Optimasi Gambar Hero
+
+- Letakkan gambar sumber resolusi tinggi di `src/assets/hero-source.jpg`.
+- Jalankan perintah berikut untuk menghasilkan varian responsif (JPEG + WebP):
+
+```bash
+npm run optimize-images
+```
+
+- Skrip akan membuat file `hero-800.jpg`, `hero-1600.jpg`, `hero-2000.jpg` dan versi `.webp` di `src/assets/`.
+- `Hero` component sudah dikonfigurasi memakai `srcset`/`picture` sehingga browser memilih ukuran dan format terbaik.

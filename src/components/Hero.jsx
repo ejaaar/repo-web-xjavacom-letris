@@ -1,18 +1,28 @@
 import React from "react";
 
 export default function Hero() {
-  const bg =
-    import heroImg from '../assets/hero.svg';
-    const bg = heroImg;
   return (
-    <section
-      className="hero-bg"
-      style={{
-        backgroundImage: `linear-gradient(rgba(15,23,42,0.35), rgba(15,23,42,0.15)), url(${bg})`,
-      }}
-    >
-      <div className="max-w-6xl mx-auto px-6 py-24">
-        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 max-w-3xl">
+    <section className="relative">
+      <picture className="block w-full">
+        <source
+          type="image/webp"
+          srcSet="/src/assets/hero-2000.webp 2000w, /src/assets/hero-1600.webp 1600w, /src/assets/hero-800.webp 800w"
+          sizes="(min-width: 1024px) 1600px, 100vw"
+        />
+        <source
+          type="image/jpeg"
+          srcSet="/src/assets/hero-2000.jpg 2000w, /src/assets/hero-1600.jpg 1600w, /src/assets/hero-800.jpg 800w"
+          sizes="(min-width: 1024px) 1600px, 100vw"
+        />
+        <img
+          src="/src/assets/hero.svg"
+          alt="Flatlay meja kerja"
+          className="w-full h-64 md:h-96 object-cover"
+        />
+      </picture>
+
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 max-w-3xl mx-6">
           <h1 className="text-3xl md:text-4xl font-bold text-navy">
             Great Branding, Great Handling
           </h1>
