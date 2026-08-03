@@ -1,0 +1,141 @@
+.about-hero {
+
+    padding: 120px 0;
+
+    background: linear-gradient(135deg, #07131f, #0b2740);
+
+    text-align: center;
+
+}
+
+.about-hero h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+
+}
+
+.about-hero p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #c2d3e2;
+
+    line-height: 1.8;
+
+}
+
+.company-story {
+
+    padding: 100px 0;
+
+    background: #081827;
+
+}
+
+.story-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+.story-grid img {
+
+    width: 100%;
+
+    border-radius: 18px;
+
+}
+
+.story-grid p {
+
+    margin-top: 20px;
+
+    color: #b8c5d3;
+
+    line-height: 1.8;
+
+}
+
+.mission-section {
+
+    padding: 100px 0;
+
+    background: #07131f;
+
+}
+
+.mission-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+
+}
+
+.mission-card {
+
+    background: #102436;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+.mission-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.mission-card svg {
+
+    font-size: 3rem;
+
+    color: #00c2ff;
+
+    margin-bottom: 20px;
+
+}
+
+.mission-card p {
+
+    margin-top: 15px;
+
+    color: #b8c5d3;
+
+    line-height: 1.7;
+
+}
+
+@media(max-width:900px) {
+
+    .story-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .about-hero h1 {
+
+        font-size: 2.3rem;
+
+    }
+
+}
