@@ -1,0 +1,8 @@
+/*
+!.gitignore
+!index.html
+!website/
+
+# ignore OS files
+Thumbs.db
+desktop.ini
