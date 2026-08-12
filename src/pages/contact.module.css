@@ -1,0 +1,93 @@
+main {
+    padding: 0px 55px;
+}
+
+.main1 {
+    margin-top: 132px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.main1 .text h1 {
+    font-size: 40px;
+    color:#324589;
+    max-width: 550px;
+    line-height: 40px;
+    margin-bottom: 22px;
+}
+
+.main1 .text h2 {
+    font-size: 17px;
+    color: #252a34;
+    max-width: 580px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}   
+
+.main1 .card {
+    display: flex;
+    margin-bottom: 34px;
+}
+
+.main1 .card img {
+    width: 40px;
+    margin-right: 20px;
+    margin-bottom: 38px;
+}
+
+.main1 .card .textCard h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #252a34;
+    margin-bottom: 14px;
+}
+
+.main1 .card .textCard p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #252a34;
+}
+
+.main1 .image img{
+    max-width: 550px;
+}
+
+.main2 {
+    max-width: 720px;
+    margin-bottom: 100px;
+}
+
+.main2 h1 {
+    font-size: 40px;
+    color: #324589;
+    line-height: 40px;
+    margin-bottom: 42px;
+}
+
+.main2 h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #252a34;
+    margin-bottom: 10px;
+}
+
+.main2 input {
+    width: 780px;
+    height: 20px;
+    padding: 20px 10px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 24px;
+    color: #252a34;
+}
+
+.main2 .pesan {
+    height: 160px;
+    padding-bottom: calc(160px - 36px);
+}
+
+.main2 input::placeholder {
+    color: #7e7e7e;
+}

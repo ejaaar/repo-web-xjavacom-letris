@@ -1,0 +1,137 @@
+
+.article1 h1 {
+    text-align: center;
+    color: #252a34;
+    font-size: 60px;
+    padding: 228px 0px 158px 0px;
+}
+
+.article2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 56px 30px 56px;
+}
+
+.article2 h2{
+    font-size: 40px;
+    color: #324589;
+}
+
+.dropDown {
+    padding: 0px 6px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: transparent;
+    font-size: 16px;
+}
+
+.article3 {
+    margin-left: 60px;
+    max-width: 400px;
+}
+
+.article3 img {
+    width: 400px;
+}
+
+.article3 .card1 ul{
+    display: flex;
+    margin-top: 6px;
+}
+
+.article3 .card1 ul li {
+    list-style: none;
+    padding: 0px 10px 0px 0px;
+    font-size: 16px;
+    color: #252a34;
+}
+
+.article3 .card1 span {
+    border-right: 2px solid #252a34;
+    padding-right: 10px;
+}
+
+.article3 .card1 p {
+    color: #252a34;
+    font-weight: 600;
+}
+
+.article3 .link {
+    color: #b5366d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 8px;
+}
+
+.article3 .card1 h1 {
+    font-size: 28px;
+}
+
+.article3 .card1 p {
+    font-size: 16px;
+}
+
+.article3 .card2 h1 {
+    font-size: 28px;
+    color: #252a34;
+    margin-top: 20px;
+}
+
+.article3 .card2 p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #252a34;
+    margin-top: 20px;
+}
+
+.article3 .card2 .card2Link {
+    font-size: 15px;
+    text-decoration: none;
+    color: #324589;
+    margin-top: 20px;
+}
+
+
+.endContent {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    margin-bottom: 170px;
+    margin-top: 50px;
+}
+
+.endContent .content {
+    padding: 40px 60px;
+    background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 16px;
+    gap: 18px;
+    padding: 100px 240px;
+}
+
+.endContent .content h1 {
+    font-size: 48px;
+    color: #252a34;
+}
+
+.endContent .content p {
+    font-size: 20px;
+    text-align: center;
+    color: #252a34;
+    font-weight: 500;
+}
+
+
+.endContent .content a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 18px;
+    background-color: #324589;
+    padding: 16px 75px;
+    border-radius: 6px;
+}

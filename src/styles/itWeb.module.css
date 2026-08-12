@@ -1,0 +1,130 @@
+
+.main1 {
+    margin-top: 140px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.main1 .text {
+    max-width: 600px;
+}
+
+
+.main1 .h1 {
+    font-size: 28px;
+    color: #324589;
+    margin-bottom: 20px;
+}
+
+.main1 .h2 {
+    font-size: 48px;
+    color: #252a34;
+    margin-bottom: 26px;
+    line-height: 50px;
+}
+
+.main1 .p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #252a34;
+    max-width: 560px;
+    line-height: 20px;
+}
+
+.main1 .img {
+    width: 560px;
+}
+
+.main2 {
+    margin-bottom: 80px;
+}
+
+.main2 .h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #324589;
+    margin-bottom: 20px;
+}
+
+.main2 .h2 {
+    text-align: center;
+    font-size: 48px;
+    color: #252a34;
+    max-width: 900px;
+    margin: 0px auto;
+    line-height: 50px;
+}
+
+
+.main3 .kolom {
+    display: flex;
+    gap: 50px;
+}
+
+.main3 .card {
+    display: flex;
+    max-width: 580px;
+    height: 200px;
+}
+
+.main3 .img {
+    height: 64px;
+    margin-right: 18px;
+    margin-top: 10px;
+}
+
+.main3 .h1 {
+    color: #252a34;
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.main3 .p {
+    color: #252a34;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.endContent {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    margin-bottom: 170px;
+    margin-top: 100px;
+}
+
+.endContent .content {
+    padding: 40px 60px;
+    background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 16px;
+    gap: 18px;
+    padding: 100px 240px;
+}   
+
+.endContent .content h1 {
+    font-size: 48px;
+    color: #252a34;
+}
+
+.endContent .content p {
+    font-size: 20px;
+    text-align: center;
+    color: #252a34;
+    font-weight: 500;
+}
+
+
+.endContent .content a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 18px;
+    background-color: #324589;
+    padding: 16px 75px;
+    border-radius: 6px;
+}

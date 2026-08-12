@@ -1,0 +1,113 @@
+
+.studyCase1 h1{
+    text-align: center;
+    color: #252a34;
+    font-size: 60px;
+    padding: 228px 0px 158px 0px;
+}
+
+.studyCase2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 56px;
+}
+
+.studyCase2 h2{
+    font-size: 40px;
+    color: #324589;
+}
+
+.dropDown {
+    padding: 0px 6px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: transparent;
+    font-size: 16px;
+}
+
+.studyCase3 {
+    display: flex;
+    gap: 32px;
+    margin: 40px 56px;
+}
+
+.studyCase3 .card img {
+    width: 400px;
+}
+
+
+.studyCase3 ul li{
+    list-style: none;
+}
+
+.studyCase3 ul li p{
+    padding: 8px 16px;
+    background-color:#D0D9FB;
+    width: fit-content;
+    font-size: 14px;
+    color: #324589;
+    margin-top: 28px;
+}
+
+.studyCase3 ul li a {
+    text-decoration: none;
+}
+
+.studyCase3 ul li .cardText2 {
+    display: inline-block;
+    font-size: 28px;
+    color: #252a34;
+    font-weight: bolder;
+    margin: 12px 0px;
+}
+
+.studyCase3 ul li .cardText3 {
+    display: inline-block;
+    font-size: 15px;
+    color: #324589;
+    font-weight: 500;
+    margin: 14px 0px;
+}
+
+
+
+.endContent {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    margin-bottom: 170px;
+}
+
+.endContent .content {
+    padding: 40px 60px;
+    background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 16px;
+    gap: 18px;
+    padding: 100px 240px;
+}
+
+.endContent .content h1 {
+    font-size: 48px;
+    color: #252a34;
+}
+
+.endContent .content p {
+    font-size: 20px;
+    text-align: center;
+    color: #252a34;
+    font-weight: 500;
+}
+
+.endContent .content a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 18px;
+    background-color: #324589;
+    padding: 16px 75px;
+    border-radius: 6px;
+}

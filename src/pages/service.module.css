@@ -1,0 +1,144 @@
+
+.main1 h1{
+    text-align: center;
+    color: #252a34;
+    font-size: 60px;
+    padding: 163px 0px 158px 0px;
+}
+
+.main2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 208px;
+}
+
+.main2 img {
+    width: 570px;
+    margin-right: 106px;
+}
+
+.main2 .textMain2  {
+    max-width: 566px;
+}
+
+.main2 .textMain2 h2 {
+    font-size: 28px;
+    color: #324589;
+    margin-bottom: 18px;
+}
+
+.main2 .textMain2 h1 {
+    font-size: 48px;
+    color: #252a34;
+    margin-bottom: 18px;
+}
+
+.main2 .textMain2 p {
+    font-size: 17px;
+    color: #252a34;
+    font-weight: 500;
+}
+
+.main3 {
+    margin-bottom: 64px;
+}
+
+.main3 .textMain3 {
+    text-align: center;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.main3 .textMain3 h1 {
+    font-size: 28px;
+    color: #324589;
+}
+
+.main3 .textMain3 h2 {
+    font-size: 48px;
+    color: #252a34;
+}
+
+.main4 {
+    margin-left: 56px;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.main4 .card1 {
+    max-width: 590px;
+    display: flex;
+    margin-right: 50px;
+}
+
+.main4 .card1 ul li {
+    list-style: none;
+    color: #252a34;
+}
+
+.main4 .card1 h1 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.main4 .card1 p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    height: 110px;
+}
+
+.main4 .card1 .link {
+    font-size: 15px;
+    color:#324589;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main4 img {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+}
+
+
+.endContent {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    margin-bottom: 170px;
+    margin-top: 120px;
+}
+
+.endContent .content {
+    padding: 40px 60px;
+    background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 16px;
+    gap: 18px;
+    padding: 100px 240px;
+}
+
+.endContent .content h1 {
+    font-size: 48px;
+    color: #252a34;
+}
+
+.endContent .content p {
+    font-size: 20px;
+    text-align: center;
+    color: #252a34;
+    font-weight: 500;
+}
+
+.endContent .content a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 18px;
+    background-color: #324589;
+    padding: 16px 75px;
+    border-radius: 6px;
+}
