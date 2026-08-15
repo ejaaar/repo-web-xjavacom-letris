@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import style from './contact.module.css'
+import style from '../styles/contact.module.css'
 import Navbar from '../components/Navbar.jsx'
 
+import service from '../assets/pages-images/contact/contact-service-icon.svg'
+import kantor from '../assets/pages-images/contact/contact-kantor-icon.svg'
 
-import service from '../icons/contact-service-icon.svg'
-import kantor from '../icons/contact-kantor-icon.svg'
-import mainImage from '../assets/contact-img.png'
+import mainImage from '../assets/pages-images/contact/contact-img.png'
 
 export default function Contact(){
     return (
@@ -53,6 +53,8 @@ export default function Contact(){
 
                 <h2>Pesan</h2>
                 <input type="text" placeholder="Tuliskan pesan anda" className={style.pesan}/>
+
+                <button className={style.btn}>Kirim Pesan</button>
             </div>
         </main>
     )

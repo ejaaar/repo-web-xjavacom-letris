@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
-import style from './media.module.css'
+import style from '../styles/media.module.css'
 import Navbar from '../components/Navbar.jsx'
 
-import mediaPic from '../assets/media-phone.png'
-import icon1 from "../icons/media-icon1.png"
-import icon2 from "../icons/media-icon2.png"
-import icon3 from "../icons/media-icon3.png"
-import icon4 from "../icons/media-icon4.png"
-import icon5 from "../icons/media-icon5.png"
-import icon6 from "../icons/media-icon6.png"
+import mediaPic from '../assets/pages-images/media/media-phone.png'
+
+import icon1 from "../assets/pages-images/media/media-icon1.png"
+import icon2 from "../assets/pages-images/media/media-icon2.png"
+import icon3 from "../assets/pages-images/media/media-icon3.png"
+import icon4 from "../assets/pages-images/media/media-icon4.png"
+import icon5 from "../assets/pages-images/media/media-icon5.png"
+import icon6 from "../assets/pages-images/media/media-icon6.png"
 
 export default function Media() {
     return (

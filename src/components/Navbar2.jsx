@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './navbar2.module.css';
+
 import logoWhite from '../assets/logo-white.svg';
 import logoColor from '../assets/logo-warna.svg';
 

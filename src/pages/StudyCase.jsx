@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import style from './studyCase.module.css'
+import style from '../styles/studyCase.module.css'
 import Navbar from '../components/Navbar.jsx'
 
-import webDev from './../assets/webDev-card.png'
-import media from './../assets/media-card.png'
+import webDev from '../assets/pages-images/studyCase/google-img.png'
+import media from '../assets/pages-images/studyCase/fif-group-img.png'
 
 export default function StudyCase() {
     const [selectedCategory, setSelectedCategory] = useState('semua');
@@ -36,8 +36,8 @@ export default function StudyCase() {
                     <img src={webDev} alt="Web Development" />
                     <ul>
                         <li><p className={style.cardText1}>Web Development</p></li>
-                        <li><a className={style.cardText2} href="#">Google</a></li>
-                        <li><a className={style.cardText3} href="#">Baca Selengkapnya...</a></li>
+                        <li><Link to="/Google" className={style.cardText2}>Google</Link></li>
+                        <li><Link to="/Google" className={style.cardText3}>Baca Selengkapnya...</Link></li>
                     </ul>
                 </div>
 
@@ -45,8 +45,8 @@ export default function StudyCase() {
                     <img src={media} alt="Media Placement" />
                     <ul>
                         <li><p className={style.cardText1}>Media Placement TV</p></li>
-                        <li><a className={style.cardText2} href="#">FIF GROUP</a></li>
-                        <li><a className={style.cardText3} href="#">Baca Selengkapnya...</a></li>
+                        <li><Link to="/Fif" className={style.cardText2}>FIF GROUP</Link></li>
+                        <li><Link to="/Fif" className={style.cardText3}>Baca Selengkapnya...</Link></li>
                     </ul>
                 </div>
             </div>

@@ -9,7 +9,7 @@
 .article2 {
     display: flex;
     justify-content: space-between;
-    margin: 0px 56px 30px 56px;
+    margin: 0px 56px 30px 10px;
 }
 
 .article2 h2{
@@ -27,7 +27,12 @@
 }
 
 .article3 {
-    margin-left: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.article3 .card{
+    margin-left: 10px;
     max-width: 400px;
 }
 
@@ -35,24 +40,24 @@
     width: 400px;
 }
 
-.article3 .card1 ul{
+.article3 .card ul{
     display: flex;
     margin-top: 6px;
 }
 
-.article3 .card1 ul li {
+.article3 .card ul li {
     list-style: none;
     padding: 0px 10px 0px 0px;
     font-size: 16px;
     color: #252a34;
 }
 
-.article3 .card1 span {
+.article3 .card span {
     border-right: 2px solid #252a34;
     padding-right: 10px;
 }
 
-.article3 .card1 p {
+.article3 .card p {
     color: #252a34;
     font-weight: 600;
 }
@@ -65,28 +70,28 @@
     padding-left: 8px;
 }
 
-.article3 .card1 h1 {
+.article3 .card h1 {
     font-size: 28px;
 }
 
-.article3 .card1 p {
+.article3 .card p {
     font-size: 16px;
 }
 
-.article3 .card2 h1 {
+.article3 .text h1 {
     font-size: 28px;
     color: #252a34;
     margin-top: 20px;
 }
 
-.article3 .card2 p {
+.article3 .text p {
     font-size: 16px;
     font-weight: 500;
     color: #252a34;
     margin-top: 20px;
 }
 
-.article3 .card2 .card2Link {
+.article3 .text .card2Link {
     font-size: 15px;
     text-decoration: none;
     color: #324589;

@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import style from '../styles/itWeb.module.css'
 import Navbar from '../components/Navbar'
 
-import heroImg from '../assets/images/it-web-service/it-web-hero-pic.png'
-import icon1 from '../assets/images/it-web-service/it-web-icon1.png'
-import icon2 from '../assets/images/it-web-service/it-web-icon2.png'
-import icon3 from '../assets/images/it-web-service/it-web-icon3.png'
-import icon4 from '../assets/images/it-web-service/it-web-icon4.png'
-import icon5 from '../assets/images/it-web-service/it-web-icon5.png'
-import icon6 from '../assets/images/it-web-service/it-web-icon6.png'
+import heroImg from '../assets/pages-images/it-web-service/it-web-hero-pic.png'
+
+import icon1 from '../assets/pages-images/it-web-service/it-web-icon1.png'
+import icon2 from '../assets/pages-images/it-web-service/it-web-icon2.png'
+import icon3 from '../assets/pages-images/it-web-service/it-web-icon3.png'
+import icon4 from '../assets/pages-images/it-web-service/it-web-icon4.png'
+import icon5 from '../assets/pages-images/it-web-service/it-web-icon5.png'
+import icon6 from '../assets/pages-images/it-web-service/it-web-icon6.png'
 
 export default function ItWeb() {
     return(

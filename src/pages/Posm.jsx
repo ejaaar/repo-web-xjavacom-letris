@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import style from '../styles/posm.module.css'
 import Navbar from '../components/Navbar'
 
-import heroImg from '../assets/images/POSM/card-posm.png'
-import icon1 from '../assets/images/POSM/icon-vidio-promosi.png'
-import icon2 from '../assets/images/POSM/icon-booth.png'
-import icon3 from '../assets/images/POSM/icon-stande.png'
-import icon4 from '../assets/images/POSM/icon-desain.png'
+import heroImg from '../assets/pages-images/POSM/card-posm.png'
+import icon1 from '../assets/pages-images/POSM/icon-vidio-promosi.png'
+import icon2 from '../assets/pages-images/POSM/icon-booth.png'
+import icon3 from '../assets/pages-images/POSM/icon-stande.png'
+import icon4 from '../assets/pages-images/POSM/icon-desain.png'
 
 
 export default function ItWeb() {

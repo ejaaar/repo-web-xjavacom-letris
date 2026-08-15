@@ -1,11 +1,12 @@
 import style from './footer.module.css'
-import world from '../icons/world-icon.png'
-import mail from '../icons/email-icon.png'
-import call from '../icons/call-icon.png'
-import map from '../icons/map-icon.png'
-import facebook from '../icons/facebook-icon.png'
-import instagram from '../icons/instagram-icon.png'
-import twitter from '../icons/twitter-icon.png'
+
+import world from '../assets/pages-images/footer/world-icon.png'
+import mail from '../assets/pages-images/footer/email-icon.png'
+import call from '../assets/pages-images/footer/call-icon.png'
+import map from '../assets/pages-images/footer/map-icon.png'
+import facebook from '../assets/pages-images/footer/facebook-icon.png'
+import instagram from '../assets/pages-images/footer/instagram-icon.png'
+import twitter from '../assets/pages-images/footer/twitter-icon.png'
 
 
 export default function Navbar(){

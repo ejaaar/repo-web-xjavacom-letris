@@ -5,7 +5,7 @@
 }
 
 .main1 {
-    background-image: url('../assets/images/home/banner-home.png');
+    background-image: url('../assets/pages-images/home/banner-home.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,6 @@
     color: white;
     text-align: center;
     line-height: 60px;
-    /* margin-bottom: 40px; */
     margin: 0px auto 40px ;
 }
 
@@ -51,6 +50,7 @@
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn1 {

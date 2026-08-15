@@ -13,7 +13,8 @@
 }
 
 .main2 img {
-    width: 540px;
+    width: 580px;
+    margin-left: -6px;
 }
 
 .main2 .text {
@@ -130,7 +131,7 @@
 }
 
 .main6 .card img {
-    width: 160px;           
+    width: 120px;           
     height: auto;
     margin-bottom: 10px;
 }

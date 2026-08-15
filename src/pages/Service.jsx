@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import style from './service.module.css'
+import style from '../styles/service.module.css'
 import Navbar from '../components/Navbar.jsx'
 
-import serviceImg from '../assets/service-main.png'
-import icon1 from '../icons/service-icon1.png'
-import icon2 from '../icons/service-icon2.png'
-import icon3 from '../icons/service-icon3.png'
-import icon4 from '../icons/service-icon4.png'
+import serviceImg from '../assets/pages-images/service-images/hero-img.png'
+
+import icon1 from '../assets/pages-images/service-images/service-icon1.png'
+import icon2 from '../assets/pages-images/service-images/service-icon2.png'
+import icon3 from '../assets/pages-images/service-images/service-icon3.png'
+import icon4 from '../assets/pages-images/service-images/service-icon4.png'
 
 export default function Service(){
     return(

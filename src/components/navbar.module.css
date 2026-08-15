@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;             
     background-color: rgb(255, 255, 255);
-    z-index: 1000;
+    z-index: 99999;
     transition: all 0.4s;
 }
 

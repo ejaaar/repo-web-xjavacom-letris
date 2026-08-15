@@ -1,36 +1,37 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import style from './home.module.css';
-import Navbar2 from '../components/Navbar2.jsx';
+import style from '../../src/styles/home.module.css';
+import Navbar2 from "../components/Navbar2.jsx";
 
-import heroPic from '../assets/images/home/banner-home.png';
-import cardPic from '../assets/images/home/home-card.png';
-import icon1 from '../assets/images/home/icons/icon-media.png';
-import icon2 from '../assets/images/home/icons/icon-it-web.png';
-import icon3 from '../assets/images/home/icons/icon-digital-marketing.png';
-import icon4 from '../assets/images/home/icons/icon-posm.png';
-import iconCheck from '../assets/images/home/icons/icon-check.png'
+import heroPic from '../assets/pages-images/home/banner-home.png';
+import cardPic from '../assets/pages-images/home/home-card.png';
 
-import media from "../assets/images/home/card-media.jpg"
-import web from "../assets/images/home/card-it-web-service.jpg"
+import icon1 from '../assets/pages-images/home/icons/icon-media.png';
+import icon2 from '../assets/pages-images/home/icons/icon-it-web.png';
+import icon3 from '../assets/pages-images/home/icons/icon-digital-marketing.png';
+import icon4 from '../assets/pages-images/home/icons/icon-posm.png';
+import iconCheck from '../assets/pages-images/home/icons/icon-check.png'
 
-import sponsor1 from '../assets/images/home/sponsor/fifgroup.png'
-import sponsor2 from '../assets/images/home/sponsor/pertamina.png'
-import sponsor3 from '../assets/images/home/sponsor/alva.png'
-import sponsor4 from '../assets/images/home/sponsor/yellow.png'
-import sponsor5 from '../assets/images/home/sponsor/tutwuri.png'
-import sponsor6 from '../assets/images/home/sponsor/bawaslu.png'
-import sponsor7 from '../assets/images/home/sponsor/kominfo.png'
-import sponsor8 from '../assets/images/home/sponsor/blibli.png'
-import sponsor9 from '../assets/images/home/sponsor/huawei.png'
-import sponsor10 from '../assets/images/home/sponsor/cmsmart.png'
-import sponsor11 from '../assets/images/home/sponsor/kelautan.png'
-import sponsor12 from '../assets/images/home/sponsor/teroris.png'
-import sponsor13 from '../assets/images/home/sponsor/bpom.png'
-import sponsor14 from '../assets/images/home/sponsor/satya.png'
-import sponsor15 from '../assets/images/home/sponsor/bmhs.png'
-import sponsor16 from '../assets/images/home/sponsor/sentul-city.png'
-import sponsor17 from '../assets/images/home/sponsor/eurom.png'
+import media from "../assets/pages-images/home/card-media.jpg"
+import web from "../assets/pages-images/home/card-it-web-service.jpg"
+
+import sponsor1 from '../assets/pages-images/home/sponsor/fifgroup.png'
+import sponsor2 from '../assets/pages-images/home/sponsor/pertamina.png'
+import sponsor3 from '../assets/pages-images/home/sponsor/alva.png'
+import sponsor4 from '../assets/pages-images/home/sponsor/yellow.png'
+import sponsor5 from '../assets/pages-images/home/sponsor/tutwuri.png'
+import sponsor6 from '../assets/pages-images/home/sponsor/bawaslu.png'
+import sponsor7 from '../assets/pages-images/home/sponsor/kominfo.png'
+import sponsor8 from '../assets/pages-images/home/sponsor/blibli.png'
+import sponsor9 from '../assets/pages-images/home/sponsor/huawei.png'
+import sponsor10 from '../assets/pages-images/home/sponsor/cmsmart.png'
+import sponsor11 from '../assets/pages-images/home/sponsor/kelautan.png'
+import sponsor12 from '../assets/pages-images/home/sponsor/teroris.png'
+import sponsor13 from '../assets/pages-images/home/sponsor/bpom.png'
+import sponsor14 from '../assets/pages-images/home/sponsor/satya.png'
+import sponsor15 from '../assets/pages-images/home/sponsor/bmhs.png'
+import sponsor16 from '../assets/pages-images/home/sponsor/sentul-city.png'
+import sponsor17 from '../assets/pages-images/home/sponsor/eurom.png'
 
 
 export default function Home() {
@@ -44,13 +45,8 @@ export default function Home() {
                     <p>Tim kami merupakan orang-orang profesional di bidangnya, dengan latar belakang sebagai jurnalis/editor senior, programmer, serta digital marketer.</p>
 
                     <div className={style.button}>
-                        <button className={`${style.btn} ${style.btn1}`}>
-                            Service
-                        </button>
-
-                        <button className={`${style.btn} ${style.btn2}`}>
-                            Contact
-                        </button>
+                        <Link to="/service" className={`${style.btn} ${style.btn1}`}>Service</Link>
+                        <Link to="/contact" className={`${style.btn} ${style.btn2}`}>Contact</Link>
                     </div>
                 </div>
 

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import style from '../styles/digitalMarketing.module.css'
 import Navbar from '../components/Navbar'
 
-import heroImg from "../assets/images/digital-marketing/card-digital-marketing.png"
-import icon1 from "../assets/images/digital-marketing/icon-digital-ads.png"
-import icon2 from "../assets/images/digital-marketing/icon-sosmed-management.png"
-import icon3 from "../assets/images/digital-marketing/icon-sosmed-monitoring.png"
-import icon4 from "../assets/images/digital-marketing/icon-trending.png"
+import heroImg from "../assets/pages-images/digital-marketing/card-digital-marketing.png"
+import icon1 from "../assets/pages-images/digital-marketing/icon-digital-ads.png"
+import icon2 from "../assets/pages-images/digital-marketing/icon-sosmed-management.png"
+import icon3 from "../assets/pages-images/digital-marketing/icon-sosmed-monitoring.png"
+import icon4 from "../assets/pages-images/digital-marketing/icon-trending.png"
 
 
 export default function ItWeb() {
