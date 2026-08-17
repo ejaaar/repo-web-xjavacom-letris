@@ -1,5 +1,4 @@
-
-.main1 h1{
+.main1 h1 {
     text-align: center;
     color: #252a34;
     font-size: 60px;
@@ -17,7 +16,7 @@
     margin-right: 106px;
 }
 
-.main2 .textMain2  {
+.main2 .textMain2 {
     max-width: 566px;
 }
 
@@ -60,15 +59,21 @@
 }
 
 .main4 {
-    margin-left: 56px;
-    margin-bottom: 80px;
+    margin: 44px 0px;
     display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 
 .main4 .card1 {
     max-width: 590px;
     display: flex;
-    margin-right: 50px;
+    width: 100%;
+}
+
+.main4 .card1 ul {
+    padding: 0;
+    margin: 0;
 }
 
 .main4 .card1 ul li {
@@ -84,13 +89,13 @@
 .main4 .card1 p {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 18px;
-    height: 110px;
+    margin-bottom: 26px;
+    min-height: 110px;
 }
 
 .main4 .card1 .link {
     font-size: 15px;
-    color:#324589;
+    color: #324589;
     text-decoration: none;
     font-weight: 500;
 }
@@ -99,8 +104,8 @@
     width: 60px;
     height: 60px;
     margin-right: 16px;
+    flex-shrink: 0;
 }
-
 
 .endContent {
     display: flex;
@@ -111,11 +116,10 @@
 }
 
 .endContent .content {
-    padding: 40px 60px;
-    background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
+    background: linear-gradient(270deg, #d1d1ee, #edf3f7);
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     border-radius: 16px;
     gap: 18px;
     padding: 100px 240px;
@@ -124,6 +128,7 @@
 .endContent .content h1 {
     font-size: 48px;
     color: #252a34;
+    text-align: center;
 }
 
 .endContent .content p {
@@ -137,8 +142,172 @@
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 14px 18px;
     background-color: #324589;
     padding: 16px 75px;
     border-radius: 6px;
+}
+
+/* ==========================================
+    MEDIA QUERIES FOR RESPONSIVE (TABLET & HP)
+   ========================================== */
+
+/* Mode Tablet (Max Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .main1 {
+        margin-top: 20px;
+    }
+    
+    .main1 h1 {
+        font-size: 44px;;
+        padding: 100px 0px 80px 0px;
+    }
+
+    .main2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 24px;
+        margin-bottom: 100px;
+    }
+
+    .main2 img {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .main2 .textMain2 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main2 .textMain2 h1 {
+        font-size: 36px;
+    }
+
+    .main3 {
+        padding: 0 24px;
+    }
+
+    .main3 .textMain3 h2 {
+        font-size: 36px;
+    }
+
+    .main4 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 24px;
+        margin: 24px 0px;
+        gap: 30px;
+    }
+
+    .main4 .card1 {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .main4 .card1 p {
+        min-height: auto;
+    }
+
+    .endContent {
+        padding: 20px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .endContent .content {
+        padding: 60px 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .endContent .content h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+/* Mode Mobile / HP (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+    .main1 h1 {
+        font-size: 32px;
+        padding: 60px 0px 40px 0px;
+    }
+
+    .main2 {
+        margin-bottom: 60px;
+        padding: 0 16px;
+    }
+
+    .main2 .textMain2 h2 {
+        font-size: 22px;
+    }
+
+    .main2 .textMain2 h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .main2 .textMain2 p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .main3 .textMain3 h1 {
+        font-size: 22px;
+    }
+
+    .main3 .textMain3 h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .main4 {
+        padding: 0 16px;
+    }
+
+    .main4 .card1 {
+        flex-direction: column;
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+
+    .main4 img {
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+
+    .main4 .card1 h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .main4 .card1 p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 16px;
+
+    }
+
+    .endContent .content {
+        padding: 40px 20px;
+    }
+
+    .endContent .content h1 {
+        font-size: 26px;
+    }
+
+    .endContent .content p {
+        font-size: 15px;
+    }
+
+    .endContent .content p br {
+        display: none;
+    }
+
+    .endContent .content a {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
 }

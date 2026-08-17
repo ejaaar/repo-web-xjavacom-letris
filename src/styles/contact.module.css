@@ -1,4 +1,4 @@
-main {
+.container {
     padding: 0px 55px;
 }
 
@@ -12,32 +12,33 @@ main {
 
 .main1 .text h1 {
     font-size: 40px;
-    color:#324589;
+    color: #324589;
     max-width: 550px;
     line-height: 40px;
     margin-bottom: 22px;
 }
 
-.main1 .text h2 {
+.main1 .subtext {
     font-size: 17px;
     color: #252a34;
     max-width: 580px;
     font-weight: 500;
     margin-bottom: 40px;
+    line-height: 24px;
 }   
 
 .main1 .card {
     display: flex;
+    align-items: flex-start;
     margin-bottom: 34px;
 }
 
 .main1 .card img {
     width: 40px;
     margin-right: 20px;
-    margin-bottom: 38px;
 }
 
-.main1 .card .textCard h3{
+.main1 .card .textCard h3 {
     font-size: 20px;
     font-weight: 500;
     color: #252a34;
@@ -50,13 +51,15 @@ main {
     color: #252a34;
 }
 
-.main1 .image img{
+.main1 .image img {
     max-width: 550px;
+    width: 100%;
+    height: auto;
 }
 
 .main2 {
-    /* max-width: 720px; */
     margin-bottom: 100px;
+    max-width: 780px;
 }
 
 .main2 h1 {
@@ -66,29 +69,44 @@ main {
     margin-bottom: 42px;
 }
 
-.main2 h2 {
+.main2 .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main2 .label {
     font-size: 20px;
     font-weight: 500;
     color: #252a34;
     margin-bottom: 10px;
 }
 
-.main2 input {
-    width: 780px;
-    height: 20px;
-    padding: 20px 10px;
+.main2 input,
+.main2 textarea {
+    width: 100%;
+    max-width: 780px;
+    padding: 12px 14px;
     font-size: 16px;
     outline: none;
     margin-bottom: 24px;
     color: #252a34;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.main2 input {
+    height: 46px;
 }
 
 .main2 .pesan {
     height: 160px;
-    padding-bottom: calc(160px - 36px);
+    resize: vertical;
 }
 
-.main2 input::placeholder {
+.main2 input::placeholder,
+.main2 textarea::placeholder {
     color: #7e7e7e;
 }
 
@@ -98,6 +116,126 @@ main {
     font-size: 16px;
     color: white;
     border: none;
-    padding: 12px 344px;
+    padding: 14px 0px;
+    width: 100%;
+    max-width: 780px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.main2 .btn:hover {
+    background-color: #243366;
+}
+
+/* ==========================================
+    MEDIA QUERIES (TABLET & HP)
+   ========================================== */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0px 32px;
+    }
+
+    .main1 {
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .main1 .text h1 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .main1 .subtext {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main1 .image img {
+        max-width: 100%;
+    }
+
+    .main2 {
+        margin: 0 auto 80px auto;
+    }
+
+    .main2 h1 {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0px 16px;
+    }
+
+    .main1 {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+
+    .main1 .text h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .main1 .subtext {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .main1 .card {
+        margin-bottom: 24px;
+    }
+
+    .main1 .card img {
+        width: 32px;
+        margin-right: 14px;
+    }
+
+    .main1 .card .textCard h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .main1 .card .textCard p {
+        font-size: 14px;
+    }
+
+    .main2 {
+        margin-bottom: 60px;
+    }
+
+    .main2 h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 28px;
+    }
+
+    .main2 .label {
+        font-size: 16px;
+    }
+
+    .main2 input {
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .main2 .pesan {
+        height: 120px;
+    }
+
+    .main2 .btn {
+        font-size: 15px;
+        padding: 12px 0px;
+    }
 }

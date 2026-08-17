@@ -1,21 +1,25 @@
-import { Link } from 'react-router-dom'
-import style from '../styles/contact.module.css'
-import Navbar from '../components/Navbar.jsx'
+import style from '../styles/contact.module.css';
+import Navbar from '../components/Navbar.jsx';
 
-import service from '../assets/pages-images/contact/contact-service-icon.svg'
-import kantor from '../assets/pages-images/contact/contact-kantor-icon.svg'
+import service from '../assets/pages-images/contact/contact-service-icon.svg';
+import kantor from '../assets/pages-images/contact/contact-kantor-icon.svg';
+import mainImage from '../assets/pages-images/contact/contact-img.png';
 
-import mainImage from '../assets/pages-images/contact/contact-img.png'
+export default function Contact() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
 
-export default function Contact(){
     return (
-        <main>
+        <main className={style.container}>
             <Navbar />
             
             <div className={style.main1}>
                 <div className={style.text}>
                     <h1>Tetap Terhubung dengan Para Tim Profesional Kami</h1>
-                    <h2>X-Javacom merupakan perusahaan yang bergerak di bidang konsultasi media dan IT. Ditunjang SDM yang ahli dan berpengalaman, X-Javacom telah dipercaya banyak klien. Mulai dari perusahaan swasta, NGO, hingga kementerian/lembaga Puluhan project telah kami realisasikan. Press release media, media monitoring, digital listening, digital ads, web&apps development, POSM, dan banyak lainnya.</h2>
+                    <p className={style.subtext}>
+                        X-Javacom merupakan perusahaan yang bergerak di bidang konsultasi media dan IT. Ditunjang SDM yang ahli dan berpengalaman, X-Javacom telah dipercaya banyak klien. Mulai dari perusahaan swasta, NGO, hingga kementerian/lembaga. Puluhan project telah kami realisasikan. Press release media, media monitoring, digital listening, digital ads, web&apps development, POSM, dan banyak lainnya.
+                    </p>
 
                     <div className={style.card}>
                         <img src={service} alt="" />
@@ -42,20 +46,22 @@ export default function Contact(){
 
             <div className={style.main2}>
                 <h1>Kami Akan Senang dapat Terhubung dengan Anda</h1>
-                <h2>Nama Lengkap</h2>
-                <input type="text" placeholder="Name"/>
+                <form onSubmit={handleSubmit} className={style.form}>
+                    <label htmlFor="nama" className={style.label}>Nama Lengkap</label>
+                    <input id="nama" type="text" placeholder="Name" required />
 
-                <h2>Email</h2>
-                <input type="text" placeholder="example@gmail.com"/>
+                    <label htmlFor="email" className={style.label}>Email</label>
+                    <input id="email" type="email" placeholder="example@gmail.com" required />
 
-                <h2>No. Handphone</h2>
-                <input type="text" placeholder="+62..."/>
+                    <label htmlFor="phone" className={style.label}>No. Handphone</label>
+                    <input id="phone" type="tel" placeholder="+62..." required />
 
-                <h2>Pesan</h2>
-                <input type="text" placeholder="Tuliskan pesan anda" className={style.pesan}/>
+                    <label htmlFor="pesan" className={style.label}>Pesan</label>
+                    <textarea id="pesan" placeholder="Tuliskan pesan anda" className={style.pesan} required />
 
-                <button className={style.btn}>Kirim Pesan</button>
+                    <button type="submit" className={style.btn}>Kirim Pesan</button>
+                </form>
             </div>
         </main>
-    )
+    );
 }

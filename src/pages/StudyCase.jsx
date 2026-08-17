@@ -6,11 +6,32 @@ import Navbar from '../components/Navbar.jsx'
 import webDev from '../assets/pages-images/studyCase/google-img.png'
 import media from '../assets/pages-images/studyCase/fif-group-img.png'
 
+const portfolioData = [
+    {
+        id: 1,
+        category: 'it-web',
+        tag: 'Web Development',
+        title: 'Google',
+        link: '/Google',
+        image: webDev
+    },
+    {
+        id: 2,
+        category: 'media',
+        tag: 'Media Placement TV',
+        title: 'FIF GROUP',
+        link: '/Fif',
+        image: media
+    }
+];
+
 export default function StudyCase() {
     const [selectedCategory, setSelectedCategory] = useState('semua');
 
+    const filteredPortfolios = selectedCategory === 'semua' ? portfolioData : portfolioData.filter(item => item.category === selectedCategory);
+
     return (
-        <div>
+        <main className={style.container}>
             <Navbar />
 
             <div className={style.studyCase1}>
@@ -32,23 +53,16 @@ export default function StudyCase() {
             </div>
 
             <div className={style.studyCase3}>
-                <div className={style.Card}>
-                    <img src={webDev} alt="Web Development" />
-                    <ul>
-                        <li><p className={style.cardText1}>Web Development</p></li>
-                        <li><Link to="/Google" className={style.cardText2}>Google</Link></li>
-                        <li><Link to="/Google" className={style.cardText3}>Baca Selengkapnya...</Link></li>
-                    </ul>
-                </div>
-
-                <div className={style.Card}>
-                    <img src={media} alt="Media Placement" />
-                    <ul>
-                        <li><p className={style.cardText1}>Media Placement TV</p></li>
-                        <li><Link to="/Fif" className={style.cardText2}>FIF GROUP</Link></li>
-                        <li><Link to="/Fif" className={style.cardText3}>Baca Selengkapnya...</Link></li>
-                    </ul>
-                </div>
+                {filteredPortfolios.map((item) => (
+                    <div key={item.id} className={style.Card}>
+                        <img src={item.image} alt="" />
+                        <ul>
+                            <li><p className={style.cardText1}>{item.tag}</p></li>
+                            <li><Link to={item.link} className={style.cardText2}>{item.title}</Link></li>
+                            <li><Link to={item.link} className={style.cardText3}>Baca Selengkapnya...</Link></li>
+                        </ul>
+                    </div>
+                ))}
             </div>
 
             <div className={style.endContent}>
@@ -58,6 +72,6 @@ export default function StudyCase() {
                     <Link to="/contact">Contact</Link>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }

@@ -1,4 +1,3 @@
-
 .main1 {
     margin-top: 140px;
     margin-bottom: 120px;
@@ -10,7 +9,6 @@
 .main1 .text {
     max-width: 600px;
 }
-
 
 .main1 .h1 {
     font-size: 28px;
@@ -31,6 +29,7 @@
     color: #252a34;
     max-width: 560px;
     line-height: 20px;
+    margin-bottom: 12px;
 }
 
 .main1 .img {
@@ -57,6 +56,12 @@
     line-height: 50px;
 }
 
+.main3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
 
 .main3 .kolom {
     display: flex;
@@ -66,8 +71,7 @@
 .main3 .card {
     display: flex;
     max-width: 580px;
-    height: 200px;
-    /* background-color: red; */
+    min-height: 200px;
 }
 
 .main3 .img {
@@ -80,14 +84,14 @@
     color: #252a34;
     font-size: 30px;
     margin-bottom: 14px;
-    width: 800px;
+    max-width: 100%;
 }
 
 .main3 .p {
     color: #252a34;
     font-size: 16px;
     font-weight: 500;
-    width: 495px;
+    max-width: 100%;
 }
 
 .endContent {
@@ -99,7 +103,6 @@
 }
 
 .endContent .content {
-    padding: 40px 60px;
     background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
     display: flex;
     flex-direction: column;
@@ -112,6 +115,7 @@
 .endContent .content h1 {
     font-size: 48px;
     color: #252a34;
+    text-align: center;
 }
 
 .endContent .content p {
@@ -121,13 +125,172 @@
     font-weight: 500;
 }
 
-
 .endContent .content a {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 14px 18px;
     background-color: #324589;
     padding: 16px 75px;
     border-radius: 6px;
+}
+
+/* ==========================================
+    MEDIA QUERIES FOR RESPONSIVE (TABLET & HP)
+   ========================================== */
+
+/* Mode Tablet (Max Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .main1 {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 24px;
+        gap: 40px;
+    }
+
+    .main1 .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main1 .h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .main1 .p {
+        max-width: 100%;
+    }
+
+    .main1 .img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .main2 {
+        padding: 0 24px;
+        margin-bottom: 60px;
+    }
+
+    .main2 .h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .main3 {
+        padding: 0 24px;
+    }
+
+    .main3 .kolom {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .main3 .card {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .endContent {
+        padding: 20px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .endContent .content {
+        padding: 60px 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .endContent .content h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+/* Mode Mobile / HP (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+    .main1 {
+        margin-top: 100px;
+        margin-bottom: 60px;
+        padding: 0 16px;
+    }
+
+    .main1 .h1 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .main1 .h2 {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 18px;
+    }
+
+    .main1 .h2 br {
+        display: none;
+    }
+
+    .main1 .p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .main1 .img {
+        max-width: 100%;
+    }
+
+    .main2 .h1 {
+        font-size: 22px;
+    }
+
+    .main2 .h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .main3 .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main3 .img {
+        height: 48px;
+        margin-right: 0;
+        margin-bottom: 14px;
+        margin-top: 0;
+    }
+
+    .main3 .h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .main3 .p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .endContent .content {
+        padding: 40px 20px;
+    }
+
+    .endContent .content h1 {
+        font-size: 26px;
+    }
+
+    .endContent .content p {
+        font-size: 15px;
+    }
+
+    .endContent .content a {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
 }

@@ -1,4 +1,3 @@
-
 .article1 h1 {
     text-align: center;
     color: #252a34;
@@ -9,40 +8,53 @@
 .article2 {
     display: flex;
     justify-content: space-between;
-    margin: 0px 56px 30px 10px;
+    align-items: center;
+    margin: 0px 56px 30px 56px;
 }
 
-.article2 h2{
+.article2 h2 {
     font-size: 40px;
     color: #324589;
+    margin: 0;
 }
 
 .dropDown {
-    padding: 0px 6px;
+    padding: 0px 12px;
     height: 40px;
     border-radius: 4px;
     outline: none;
-    border: transparent;
+    border: 1px solid #ccc;
     font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .article3 {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    margin: 0 56px;
 }
 
-.article3 .card{
-    margin-left: 10px;
+.article3 .card {
     max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .article3 img {
-    width: 400px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2px;
 }
 
-.article3 .card ul{
+.article3 .card ul {
     display: flex;
-    margin-top: 6px;
+    align-items: center;
+    margin-top: 12px;
+    padding: 0;
 }
 
 .article3 .card ul li {
@@ -60,6 +72,7 @@
 .article3 .card p {
     color: #252a34;
     font-weight: 600;
+    margin: 0;
 }
 
 .article3 .link {
@@ -70,41 +83,36 @@
     padding-left: 8px;
 }
 
-.article3 .card h1 {
-    font-size: 28px;
-}
-
-.article3 .card p {
-    font-size: 16px;
-}
-
 .article3 .text h1 {
-    font-size: 28px;
+    font-size: 24px;
     color: #252a34;
-    margin-top: 20px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    line-height: 1.3;
 }
 
 .article3 .text p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: #252a34;
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.5;
 }
 
 .article3 .text .card2Link {
     font-size: 15px;
     text-decoration: none;
     color: #324589;
-    margin-top: 20px;
+    font-weight: 600;
 }
-
 
 .endContent {
     display: flex;
     justify-content: center;
     padding: 30px 0px;
     margin-bottom: 170px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .endContent .content {
@@ -121,6 +129,7 @@
 .endContent .content h1 {
     font-size: 48px;
     color: #252a34;
+    margin: 0;
 }
 
 .endContent .content p {
@@ -128,8 +137,8 @@
     text-align: center;
     color: #252a34;
     font-weight: 500;
+    margin: 0;
 }
-
 
 .endContent .content a {
     font-size: 20px;
@@ -139,4 +148,71 @@
     background-color: #324589;
     padding: 16px 75px;
     border-radius: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+    .article1 h1 {
+        padding: 150px 0px 100px 0px;
+        font-size: 48px;
+    }
+
+    .article2 {
+        margin: 0 32px 30px 32px;
+    }
+
+    .article3 {
+        margin: 0 32px;
+        justify-content: center;
+    }
+
+    .endContent .content {
+        padding: 60px 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .article1 h1 {
+        padding: 120px 0px 60px 0px;
+        font-size: 36px;
+    }
+
+    .article2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin: 0 16px 24px 16px;
+    }
+
+    .article2 h2 {
+        font-size: 28px;
+    }
+
+    .dropDown {
+        width: 100%;
+    }
+
+    .article3 {
+        margin: 0 16px;
+    }
+
+    .article3 .card {
+        max-width: 100%;
+    }
+
+    .endContent .content {
+        padding: 40px 20px;
+    }
+
+    .endContent .content h1 {
+        font-size: 26px;
+    }
+
+    .endContent .content p {
+        font-size: 15px;
+    }
+
+    .endContent .content a {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
 }

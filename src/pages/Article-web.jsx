@@ -1,22 +1,28 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom'
-import style from '../styles/article-web.module.css'
-import Navbar from '../components/Navbar.jsx'
+import { Link } from 'react-router-dom';
+import style from '../styles/article-web.module.css';
+import Navbar from '../components/Navbar.jsx';
 
-import heroImg from '../assets/pages-images/artikel-media-and-web/hero-web.jpg'
+import heroImg from '../assets/pages-images/artikel-media-and-web/hero-web.jpg';
 
 export default function ArticleMedia() {
     return (
-        <main>
+        <main className={style.mainMain}>
             <Navbar/>
 
             <div className={style.fixed}>
                 <h1 className={style.h1}>Recent Post</h1>
 
                 <ul className={style.ul}>
-                    <li className={style.list}><Link to="/ArticleMedia" className={style.link}>Untuk Apa Media? Ini Jenis dan Keuntungannya</Link></li>
-
-                    <li className={style.list}><Link to="/ArticleWeb" className={style.link}>Jenis dan Keuntungan Penerapan Web Service dalam Bisnis Anda</Link></li>
+                    <li className={style.list}>
+                        <Link to="/ArticleMedia" className={style.link}>
+                            Untuk Apa Media? Ini Jenis dan Keuntungannya
+                        </Link>
+                    </li>
+                    <li className={style.list}>
+                        <Link to="/ArticleWeb" className={style.link}>
+                            Jenis dan Keuntungan Penerapan Web Service dalam Bisnis Anda
+                        </Link>
+                    </li>
                 </ul>
             </div>
 
@@ -44,63 +50,51 @@ export default function ArticleMedia() {
                         <li className={`${style.headLi} ${style.firstLi} ${style.li}`}>
                             <a href="#jenis-jenis-web-service" className={style.a}>Jenis-Jenis Web Service</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#jenis-jenis-web-service1" className={style.a}>1. SOAP Web Services</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#jenis-jenis-web-service2" className={style.a}>2. RESTful Web Services</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#jenis-jenis-web-service3" className={style.a}>3. GraphQL</a>
                         </li>
                     </ul>
-                    
+
                     <ul className={style.ul}>
                         <li className={`${style.headLi} ${style.firstLi} ${style.li}`}>
                             <a href="#Keuntungan-Menggunakan-Web-Service" className={style.a}>Keuntungan Menggunakan Web Service</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Keuntungan-Menggunakan-Web-Service1" className={style.a}>1. Interoperabilitas</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Keuntungan-Menggunakan-Web-Service2" className={style.a}>2. Penyederhanaan Integrasi</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Keuntungan-Menggunakan-Web-Service3" className={style.a}>3. Penggunaan Sumber Daya yang Efisien</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Keuntungan-Menggunakan-Web-Service4" className={style.a}>4. Pengembangan yang Lebih Cepat</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Keuntungan-Menggunakan-Web-Service5" className={style.a}>5. Scalability dan Flexibilitas</a>
                         </li>
                     </ul>
-                    
+
                     <ul className={style.ul}>
                         <li className={`${style.headLi} ${style.firstLi} ${style.li}`}>
                             <a href="#Penerapan-Web-Service-dalam-Berbagai-Sektor" className={style.a}>Penerapan Web Service dalam Berbagai Sektor</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Penerapan-Web-Service-dalam-Berbagai-Sektor1" className={style.a}>1. E-Commerce</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Penerapan-Web-Service-dalam-Berbagai-Sektor2" className={style.a}>2. Keuangan dan Perbankan</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Penerapan-Web-Service-dalam-Berbagai-Sektor3" className={style.a}>3. Healthcare</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Penerapan-Web-Service-dalam-Berbagai-Sektor4" className={style.a}>4. Media dan Hiburan</a>
                         </li>
@@ -110,15 +104,12 @@ export default function ArticleMedia() {
                         <li className={`${style.headLi} ${style.firstLi} ${style.li}`}>
                             <a href="#Tantangan-dalam-Penggunaan-Web-Service" className={style.a}>Tantangan dalam Penggunaan Web Service</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Tantangan-dalam-Penggunaan-Web-Service1" className={style.a}>1. Keamanan</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Tantangan-dalam-Penggunaan-Web-Service2" className={style.a}>2. Skalabilitas</a>
                         </li>
-
                         <li className={style.li}>
                             <a href="#Tantangan-dalam-Penggunaan-Web-Service3" className={style.a}>3. Kompleksitas Pengelolaan API</a>
                         </li>
@@ -144,11 +135,11 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h2 className={style.articleH2} id="#jenis-jenis-web-service">
+                    <h2 className={style.articleH2} id="jenis-jenis-web-service">
                         Jenis-Jenis Web Service
                     </h2>
 
-                    <h1 className={style.articleH1} id="#jenis-jenis-web-service1">
+                    <h1 className={style.articleH1} id="jenis-jenis-web-service1">
                         1. SOAP Web Services
                     </h1>
 
@@ -166,7 +157,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id="#jenis-jenis-web-service2">
+                    <h1 className={style.articleH1} id="jenis-jenis-web-service2">
                         2. RESTful Web Services
                     </h1>
 
@@ -184,7 +175,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id="#jenis-jenis-web-service3">
+                    <h1 className={style.articleH1} id="jenis-jenis-web-service3">
                         3. GraphQL
                     </h1>
 
@@ -198,11 +189,11 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h2 className={style.articleH2} id='Keuntungan-Menggunakan-Web-Service'>
+                    <h2 className={style.articleH2} id="Keuntungan-Menggunakan-Web-Service">
                         Keuntungan Menggunakan Web Service
                     </h2>
 
-                    <h1 className={style.articleH1} id='Keuntungan-Menggunakan-Web-Service1'>
+                    <h1 className={style.articleH1} id="Keuntungan-Menggunakan-Web-Service1">
                         1. Interoperabilitas
                     </h1>
 
@@ -212,7 +203,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id='Keuntungan-Menggunakan-Web-Service2' >
+                    <h1 className={style.articleH1} id="Keuntungan-Menggunakan-Web-Service2">
                         2. Penyederhanaan Integrasi
                     </h1>
 
@@ -222,7 +213,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id='Keuntungan-Menggunakan-Web-Service3'>
+                    <h1 className={style.articleH1} id="Keuntungan-Menggunakan-Web-Service3">
                         3. Penggunaan Sumber Daya yang Efisien
                     </h1>
 
@@ -232,7 +223,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id='Keuntungan-Menggunakan-Web-Service4'>
+                    <h1 className={style.articleH1} id="Keuntungan-Menggunakan-Web-Service4">
                         4. Pengembangan yang Lebih Cepat
                     </h1>
 
@@ -242,7 +233,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id='Keuntungan-Menggunakan-Web-Service5'>
+                    <h1 className={style.articleH1} id="Keuntungan-Menggunakan-Web-Service5">
                         5. Scalability dan Flexibilitas
                     </h1>
 
@@ -252,9 +243,11 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h2 className={style.articleH2} id='Penerapan-Web-Service-dalam-Berbagai-Sektor'>Penerapan Web Service dalam Berbagai Sektor</h2>
+                    <h2 className={style.articleH2} id="Penerapan-Web-Service-dalam-Berbagai-Sektor">
+                        Penerapan Web Service dalam Berbagai Sektor
+                    </h2>
 
-                    <h1 className={style.articleH1} id='Penerapan-Web-Service-dalam-Berbagai-Sektor1'>
+                    <h1 className={style.articleH1} id="Penerapan-Web-Service-dalam-Berbagai-Sektor1">
                         1. E-Commerce
                     </h1>
 
@@ -264,7 +257,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}> 
-                    <h1 className={style.articleH1} id='Penerapan-Web-Service-dalam-Berbagai-Sektor2'>
+                    <h1 className={style.articleH1} id="Penerapan-Web-Service-dalam-Berbagai-Sektor2">
                         2. Keuangan dan Perbankan
                     </h1>
 
@@ -274,7 +267,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id='Penerapan-Web-Service-dalam-Berbagai-Sektor3'>
+                    <h1 className={style.articleH1} id="Penerapan-Web-Service-dalam-Berbagai-Sektor3">
                         3. Healthcare
                     </h1>
 
@@ -282,9 +275,9 @@ export default function ArticleMedia() {
                         Dalam sektor kesehatan, web service membantu dalam integrasi berbagai sistem rumah sakit dan aplikasi medis. Misalnya, web service digunakan untuk berbagi data pasien antara sistem rumah sakit dan aplikasi kesehatan yang digunakan oleh dokter atau pasien.
                     </p>
                 </div>
-                
+
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id='Penerapan-Web-Service-dalam-Berbagai-Sektor4'>
+                    <h1 className={style.articleH1} id="Penerapan-Web-Service-dalam-Berbagai-Sektor4">
                         4. Media dan Hiburan
                     </h1>
 
@@ -298,11 +291,11 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h2 className={style.articleH2} id='Tantangan-dalam-Penggunaan-Web-Service'>
+                    <h2 className={style.articleH2} id="Tantangan-dalam-Penggunaan-Web-Service">
                         Tantangan dalam Penggunaan Web Service
                     </h2>
 
-                    <h1 className={style.articleH1} id='Tantangan-dalam-Penggunaan-Web-Service1'>
+                    <h1 className={style.articleH1} id="Tantangan-dalam-Penggunaan-Web-Service1">
                         1. Keamanan
                     </h1>
 
@@ -312,7 +305,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id='Tantangan-dalam-Penggunaan-Web-Service2'>
+                    <h1 className={style.articleH1} id="Tantangan-dalam-Penggunaan-Web-Service2">
                         2. Skalabilitas
                     </h1>
 
@@ -322,7 +315,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id='Tantangan-dalam-Penggunaan-Web-Service3'>
+                    <h1 className={style.articleH1} id="Tantangan-dalam-Penggunaan-Web-Service3">
                         3. Kompleksitas Pengelolaan API
                     </h1>
 
@@ -332,7 +325,7 @@ export default function ArticleMedia() {
                 </div>
 
                 <div className={style.articleText}>
-                    <h1 className={style.articleH1} id="Layanan-Media-yang-Kami-Sediaka5">
+                    <h1 className={style.articleH1} id="Masa-Depan-Web-Service">
                         Masa Depan Web Service
                     </h1>
 
@@ -343,17 +336,14 @@ export default function ArticleMedia() {
                     <p className={style.articleP}>
                         Web service adalah tulang punggung dari komunikasi data antar aplikasi yang terdistribusi di seluruh dunia. Dengan berbagai protokol dan gaya arsitektur yang tersedia, web service memungkinkan sistem yang berbeda untuk berinteraksi dengan cara yang efisien dan aman. Meskipun ada beberapa tantangan yang perlu diatasi, potensi besar yang dimiliki web service dalam mendukung integrasi dan inovasi teknologi menjadikannya salah satu elemen yang sangat vital dalam dunia IT modern.
                     </p>
-                    
 
-                    <p className={style.articleP} id='Masa-Depan-Web-Service'>
-                        Kembangkan bisnis anda dengan memanfaatkan <Link>jasa Web Service</Link>  kami. Hubungi kami sekarang juga!!!
+                    <p className={style.articleP}>
+                        Kembangkan bisnis anda dengan memanfaatkan <Link to="/services" className={style.link}>jasa Web Service</Link> kami. Hubungi kami sekarang juga!!!
                     </p>
 
                     <h1 className={`${style.articleH1} ${style.articleEnd}`}>Similar Post</h1>
                 </div>
-
             </div>
-
 
             <div className={style.endContent}>
                 <div className={style.content}>
@@ -363,5 +353,5 @@ export default function ArticleMedia() {
                 </div>
             </div>
         </main>
-    )
+    );
 }

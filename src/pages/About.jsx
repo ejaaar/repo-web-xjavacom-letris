@@ -22,9 +22,24 @@ import profil10 from "../assets/profile-img/profile10.png";
 import profil11 from "../assets/profile-img/profile11.png";
 import profil12 from "../assets/profile-img/profile12.png";
 
+const teamMembers = [
+    { id: 1, name: "Imam Solehudin", role: "MEDIA EXPERT / FOUNDER X-JAVACOM", img: profil1 },
+    { id: 2, name: "Aris Wahyudi", role: "SUBJECT MATTER EXPERT", img: profil2 },
+    { id: 3, name: "E.H. Ismail", role: "LEAD MEDIA EXPERT", img: profil3 },
+    { id: 4, name: "Febry Nugroho", role: "SITE RELIABILITY ENGINEER", img: profil4 },
+    { id: 5, name: "M. Ridwan", role: "PENETRATION TEST ENGINEER", img: profil5 },
+    { id: 6, name: "Yusuf Asyari", role: "MEDIA EXPERT", img: profil6 },
+    { id: 7, name: "Sahdan", role: "LEAD IOT ENGINEER", img: profil7 },
+    { id: 8, name: "Ferry Angga", role: "HR & FINANCE MANAGER", img: profil8 },
+    { id: 9, name: "Nurlaela", role: "ACCOUNT EXECUTIVE", img: profil9 },
+    { id: 10, name: "Harun Maulana", role: "ACCOUNT EXECUTIVE", img: profil10 },
+    { id: 11, name: "Surya Ari Arfandi", role: "FRONTEND ENGINEER", img: profil11 },
+    { id: 12, name: "Dimas R.", role: "IT SUPPORT", img: profil12 },
+];
+
 export default function About() {
     return (
-        <main>
+        <main className={style.container}>
             <Navbar />
 
             <div className={style.main1}>
@@ -32,121 +47,55 @@ export default function About() {
             </div>
 
             <div className={style.main2}>
-                <img src={mainImage} alt="" />
+                <div className={style.heroImgWrapper}>
+                    <img src={mainImage} alt="" />
+                </div>
                 <div className={style.text}>
-                    <img src={logoWarna} alt="Logo X-Javacom" />
-                    <p>X-Javacom merupakan perusahaan yang bergerak di bidang konsultasi media dan IT. Ditunjang SDM yang ahli dan berpengalaman, X-Javacom telah dipercaya banyak klien. Mulai dari perusahaan swasta, NGO, hingga kementerian/lembaga Puluhan project telah kami realisasikan. Press release media, media monitoring, digital listening, digital ads, web&apps development, POSM, dan banyak lainnya.</p>
+                    <img src={logoWarna} alt="" />
+                    <p>
+                        X-Javacom merupakan perusahaan yang bergerak di bidang konsultasi media dan IT. Ditunjang SDM yang ahli dan berpengalaman, X-Javacom telah dipercaya banyak klien. Mulai dari perusahaan swasta, NGO, hingga kementerian/lembaga. Puluhan project telah kami realisasikan: Press release media, media monitoring, digital listening, digital ads, web & apps development, POSM, dan banyak lainnya.
+                    </p>
                 </div>
             </div>
 
             <div className={style.main3}>
-                <h1>Layanan Kami</h1>
-                <h2>Melangkah Maju Bersama Tim Digital Terdepan</h2>
+                <h2>Layanan Kami</h2>
+                <h3>Melangkah Maju Bersama Tim Digital Terdepan</h3>
             </div>
 
             <div className={style.main4}>
                 <div className={style.card}>
-                    <img src={icon1} alt="Icon Tim Profesional" />
-                    <h1>Tim Profesional</h1>
+                    <img src={icon1} alt="" />
+                    <h3>Tim Profesional</h3>
                     <p>Tim kami memiliki pengalaman bertahun-tahun di berbagai bidang dan memahami kebutuhan Anda.</p>
                 </div>
 
                 <div className={style.card}>
-                    <img src={icon2} alt="Icon Kredibel" />
-                    <h1>Kredibel</h1>
+                    <img src={icon2} alt="" />
+                    <h3>Kredibel</h3>
                     <p>XJavaCom memiliki reputasi yang baik sebagai perusahaan yang terpercaya dan dapat diandalkan.</p>
                 </div>
 
                 <div className={style.card}>
-                    <img src={icon3} alt="Icon Visioner" />
-                    <h1>Visioner</h1>
+                    <img src={icon3} alt="" />
+                    <h3>Visioner</h3>
                     <p>Kami memiliki visi yang jelas untuk masa depan dan selalu berusaha untuk mewujudkannya.</p>
                 </div>
             </div>
 
             <div className={style.main5}>
-                <h1>Tim Kami</h1>
-                <h2>Para Tim Ahli Kami yang Telah Memiliki Banyak Pengalaman</h2>
+                <h2>Tim Kami</h2>
+                <h3>Para Tim Ahli Kami yang Telah Memiliki Banyak Pengalaman</h3>
             </div>
 
-            <div className={style.main6}>
-                <div className={style.kolom}>
-                    <div className={style.card}>
-                        <img src={profil1} alt="Imam Solehudin" />
-                        <h1>Imam Solehudin</h1>
-                        <p>MEDIA EXPERT <br />FOUNDER X-JAVACOM</p>
+            <div className={style.teamGrid}>
+                {teamMembers.map((member) => (
+                    <div key={member.id} className={style.teamCard}>
+                        <img src={member.img} alt="" />
+                        <h3>{member.name}</h3>
+                        <p>{member.role}</p>
                     </div>
-                    
-                    <div className={style.card}>
-                        <img src={profil2} alt="Aris Wahyudi" />
-                        <h1>Aris Wahyudi</h1>
-                        <p>SUBJECT MATTER EXPERT</p>
-                    </div>
-
-                    <div className={style.card}>
-                        <img src={profil3} alt="E.H. Ismail" />
-                        <h1>E.H. Ismail</h1>
-                        <p>LEAD MEDIA EXPERT</p>
-                    </div>
-
-                    <div className={style.card}>
-                        <img src={profil4} alt="Febry Nugroho" />
-                        <h1>Febry Nugroho</h1>
-                        <p>SITE RELIABILITY ENGINEER</p>
-                    </div>
-                </div>
-                
-                <div className={style.kolom}>
-                    <div className={style.card}>
-                        <img src={profil5} alt="M. Ridwan" />
-                        <h1>M. Ridwan</h1>
-                        <p>PENETRATION TEST ENGINEER</p>
-                    </div>
-                    
-                    <div className={style.card}>
-                        <img src={profil6} alt="Yusuf Asyari" />
-                        <h1>Yusuf Asyari</h1>
-                        <p>MEDIA EXPERT</p>
-                    </div>
-
-                    <div className={style.card}>
-                        <img src={profil7} alt="Sahdan" />
-                        <h1>Sahdan</h1>
-                        <p>LEAD IOT ENGINEER</p>
-                    </div>
-
-                    <div className={style.card}>
-                        <img src={profil8} alt="Ferry Angga" />
-                        <h1>Ferry Angga</h1>
-                        <p>HR & FINANCE MANAGER</p>
-                    </div>
-                </div>
-
-                <div className={style.kolom}>
-                    <div className={style.card}>
-                        <img src={profil9} alt="Nurlaela" />
-                        <h1>Nurlaela</h1>
-                        <p>ACCOUNT EXECUTIVE</p>
-                    </div>
-                    
-                    <div className={style.card}>
-                        <img src={profil10} alt="Harun Maulana" />
-                        <h1>Harun Maulana</h1>
-                        <p>ACCOUNT EXECUTIVE</p>
-                    </div>
-
-                    <div className={style.card}>
-                        <img src={profil11} alt="Surya Ari Arfandi" />
-                        <h1>Surya Ari Arfandi</h1>
-                        <p>FRONTEND ENGINEER</p>
-                    </div>
-
-                    <div className={style.card}>
-                        <img src={profil12} alt="Dimas R." />
-                        <h1>Dimas R.</h1>
-                        <p>IT SUPPORT</p>
-                    </div>
-                </div>
+                ))}
             </div>
 
             <div className={style.endContent}>

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import style from '../styles/google.module.css'
 import Navbar from '../components/Navbar.jsx'
@@ -10,7 +9,7 @@ import icon3 from "../assets/pages-images/google-fif/icon-pen-tool.png"
 
 export default function Google() {
     return (
-        <>
+        <main className={style.container}>
             <Navbar />
 
             <div className={style.main1}>
@@ -21,7 +20,6 @@ export default function Google() {
                 <div className={style.kolom}>
                     <div className={style.card}>
                         <img className={style.img} src={icon1} alt="" />
-
                         <div className={style.text}>
                             <h1 className={style.h1}>Client :</h1>
                             <h2 className={style.h2}>Google</h2>
@@ -30,7 +28,6 @@ export default function Google() {
 
                     <div className={style.card}>
                         <img className={style.img} src={icon2} alt="" />
-
                         <div className={style.text}>
                             <h1 className={style.h1}>Service :</h1>
                             <h2 className={style.h2}>Web Development</h2>
@@ -39,7 +36,6 @@ export default function Google() {
 
                     <div className={style.card}>
                         <img className={style.img} src={icon3} alt="" />
-
                         <div className={style.text}>
                             <h1 className={style.h1}>Project :</h1>
                             <Link to="/study-case" className={`${style.h2} ${style.link}`}>IT & Web Service</Link>
@@ -47,7 +43,9 @@ export default function Google() {
                     </div>
                 </div>
 
-                <p>Hai Aku di baca lorem ipsum</p>
+                <div className={style.description}>
+                    <p>Hai Aku di baca lorem ipsum</p>
+                </div>
             </div>
 
             <div className={style.main3}>
@@ -61,7 +59,6 @@ export default function Google() {
                     <Link to="/contact">Contact</Link>
                 </div>
             </div>
-        </>
-        
+        </main>
     )
 }

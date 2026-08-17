@@ -1,11 +1,16 @@
+.container {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 .main1 {
     margin-top: 167px;
-    margin-bottom: 190px;
+    margin-bottom: 120px;
     display: flex;
     justify-content: center;
 }
 
-.main1 .h1{
+.main1 .h1 {
     font-size: 60px;
     color: #324589;
     text-decoration: none;
@@ -14,26 +19,38 @@
 
 .main2 {
     display: flex;
-    margin-left: 54px;
-    gap: 550px ;
+    justify-content: space-between;
+    margin: 0 58px;
+    gap: 80px;
+    width: 74vw;
+}
+
+.main2 .kolom {
+    max-width: 320px;
+}
+
+.main2 .description p{
+    font-weight: 500;
 }
 
 .main2 .card {
     display: flex;
-    margin-bottom: 20px ;
+    margin-bottom: 24px;
+    align-items: flex-start;
 }
 
 .main2 .img {
     height: 28px;
+    width: auto;
     margin-right: 14px;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .main2 .h1 {
     font-size: 20px;
     color: #324589;
     font-weight: 500;
-    margin-bottom: 6px;
+    margin: 0 0 6px 0;
 }
 
 .main2 .h2 {
@@ -41,20 +58,30 @@
     color: #252a34;
     font-weight: 500;
     text-decoration: none;
+    margin: 0;
 }
 
 .main2 .link {
     color: #551a8b;
 }
 
+.main2 .description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #252a34;
+    margin: 0;
+}
+
 .main3 {
-    margin-left: 58px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 80px 58px;
 }
 
 .main3 .img {
-    width: 999px;
+    width: 100%;
+    max-width: 999px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
 }
 
 .endContent {
@@ -95,4 +122,73 @@
     background-color: #324589;
     padding: 16px 75px;
     border-radius: 6px;
+}
+
+/* ==========================================
+    MEDIA QUERIES (TABLET & MOBILE)
+   ========================================== */
+
+/* Tablet (Max Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .main1 {
+        margin-top: 120px;
+        margin-bottom: 80px;
+    }
+
+    .main1 .h1 {
+        font-size: 48px;
+    }
+
+    .main2 {
+        margin: 0 32px;
+        gap: 40px;
+    }
+
+    .main3 {
+        margin: 60px 32px;
+    }
+}
+
+/* Mobile / HP (Max Width: 600px) */
+@media screen and (max-width: 600px) {
+    .main1 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .main1 .h1 {
+        font-size: 36px;
+    }
+
+    .main2 {
+        flex-direction: column;
+        margin: 0 16px;
+        gap: 32px;
+    }
+
+    .main2 .kolom {
+        max-width: 100%;
+    }
+
+    .main3 {
+        margin: 40px 16px;
+    }
+
+    /* Penyesuaian .endContent untuk Mobile */
+    .endContent .content {
+        padding: 40px 20px;
+    }
+
+    .endContent .content h1 {
+        font-size: 26px;
+    }
+
+    .endContent .content p {
+        font-size: 15px;
+    }
+
+    .endContent .content a {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
 }

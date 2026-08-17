@@ -10,29 +10,28 @@ import icon1 from '../assets/pages-images/home/icons/icon-media.png';
 import icon2 from '../assets/pages-images/home/icons/icon-it-web.png';
 import icon3 from '../assets/pages-images/home/icons/icon-digital-marketing.png';
 import icon4 from '../assets/pages-images/home/icons/icon-posm.png';
-import iconCheck from '../assets/pages-images/home/icons/icon-check.png'
+import iconCheck from '../assets/pages-images/home/icons/icon-check.png';
 
-import media from "../assets/pages-images/home/card-media.jpg"
-import web from "../assets/pages-images/home/card-it-web-service.jpg"
+import media from "../assets/pages-images/home/card-media.jpg";
+import web from "../assets/pages-images/home/card-it-web-service.jpg";
 
-import sponsor1 from '../assets/pages-images/home/sponsor/fifgroup.png'
-import sponsor2 from '../assets/pages-images/home/sponsor/pertamina.png'
-import sponsor3 from '../assets/pages-images/home/sponsor/alva.png'
-import sponsor4 from '../assets/pages-images/home/sponsor/yellow.png'
-import sponsor5 from '../assets/pages-images/home/sponsor/tutwuri.png'
-import sponsor6 from '../assets/pages-images/home/sponsor/bawaslu.png'
-import sponsor7 from '../assets/pages-images/home/sponsor/kominfo.png'
-import sponsor8 from '../assets/pages-images/home/sponsor/blibli.png'
-import sponsor9 from '../assets/pages-images/home/sponsor/huawei.png'
-import sponsor10 from '../assets/pages-images/home/sponsor/cmsmart.png'
-import sponsor11 from '../assets/pages-images/home/sponsor/kelautan.png'
-import sponsor12 from '../assets/pages-images/home/sponsor/teroris.png'
-import sponsor13 from '../assets/pages-images/home/sponsor/bpom.png'
-import sponsor14 from '../assets/pages-images/home/sponsor/satya.png'
-import sponsor15 from '../assets/pages-images/home/sponsor/bmhs.png'
-import sponsor16 from '../assets/pages-images/home/sponsor/sentul-city.png'
-import sponsor17 from '../assets/pages-images/home/sponsor/eurom.png'
-
+import sponsor1 from '../assets/pages-images/home/sponsor/fifgroup.png';
+import sponsor2 from '../assets/pages-images/home/sponsor/pertamina.png';
+import sponsor3 from '../assets/pages-images/home/sponsor/alva.png';
+import sponsor4 from '../assets/pages-images/home/sponsor/yellow.png';
+import sponsor5 from '../assets/pages-images/home/sponsor/tutwuri.png';
+import sponsor6 from '../assets/pages-images/home/sponsor/bawaslu.png';
+import sponsor7 from '../assets/pages-images/home/sponsor/kominfo.png';
+import sponsor8 from '../assets/pages-images/home/sponsor/blibli.png';
+import sponsor9 from '../assets/pages-images/home/sponsor/huawei.png';
+import sponsor10 from '../assets/pages-images/home/sponsor/cmsmart.png';
+import sponsor11 from '../assets/pages-images/home/sponsor/kelautan.png';
+import sponsor12 from '../assets/pages-images/home/sponsor/teroris.png';
+import sponsor13 from '../assets/pages-images/home/sponsor/bpom.png';
+import sponsor14 from '../assets/pages-images/home/sponsor/satya.png';
+import sponsor15 from '../assets/pages-images/home/sponsor/bmhs.png';
+import sponsor16 from '../assets/pages-images/home/sponsor/sentul-city.png';
+import sponsor17 from '../assets/pages-images/home/sponsor/eurom.png';
 
 export default function Home() {
     return (
@@ -81,7 +80,7 @@ export default function Home() {
                         <img src={icon4} alt="" className={style.img}/>
                         <h1 className={style.h1}>POSM</h1>
                         <p className={style.p}>Perkuat strategi komunikasi Anda dengan solusi media yang dirancang untuk membantu Anda mencapai target audiens dan memaksimalkan dampak pesan Anda.</p>
-                        <Link to="/Posm"     className={style.link}>Selengkapnya</Link>
+                        <Link to="/Posm" className={style.link}>Selengkapnya</Link>
                     </div>
                 </div>
 
@@ -106,7 +105,7 @@ export default function Home() {
                             </li>
                         </ul>
                         
-                        <Link className={style.link} to='about'>About Us</Link>
+                        <Link className={style.link} to='/about'>About Us</Link>
                     </div>
                 </div>
 
@@ -122,13 +121,13 @@ export default function Home() {
                             <ul>
                                 <li><p><span>Ferry Angga</span></p></li>
                                 <li><p>23 Jan 2025</p></li>
-                                <li><Link className={style.link}>Media</Link></li>
+                                <li><Link to="/ArticleMedia" className={style.link}>Media</Link></li>
                             </ul>
                         </div>
                         <div className={style.cardText}>
                             <h1>Untuk Apa Media? Ini Jenis dan Keuntungannya</h1>
                             <p>Media merupakan sarana atau alat yang digunakan untuk menyampaikan pesan atau informasi dalam kata lain bisa disebut sebagai sarana untuk</p>
-                            <Link className={style.cardLink}>Selengkapnya</Link>
+                            <Link to="/ArticleMedia" className={style.cardLink}>Selengkapnya</Link>
                         </div>
                     </div>
 
@@ -138,13 +137,13 @@ export default function Home() {
                             <ul>
                                 <li><p><span>Ferry Angga</span></p></li>
                                 <li><p>23 Jan 2025</p></li>
-                                <li><Link className={style.link}>IT & Web Service</Link></li>
+                                <li><Link to="/ArticleWeb" className={style.link}>IT & Web Service</Link></li>
                             </ul>
                         </div>
                         <div className={style.cardText}>
                             <h1>Jenis dan Keuntungan Penerapan Web Service dalam Bisnis Anda</h1>
                             <p>Web service adalah sebuah sistem yang memungkinkan komunikasi dan pertukaran data antar aplikasi yang berjalan di server yang berbeda melalui</p>
-                            <Link className={style.cardLink}>Selengkapnya</Link>
+                            <Link to="/ArticleWeb" className={style.cardLink}>Selengkapnya</Link>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,5 @@
 .fixed {
     position: fixed;
-    /* background-color: red; */
     max-width: 390px;
     top: 120px;
     right: 60px;
@@ -29,6 +28,10 @@
     text-decoration: none;
 }
 
+.mainMain {
+    margin-left: 40px;
+}
+
 .main1 {
     margin-top: 140px;
 }
@@ -54,7 +57,7 @@
 .main1 .text1 .link {
     font-size: 16px;
     font-weight: 500;
-    color: #b5366d;
+    color: #252a34;
     text-decoration: none;
     margin-left: 20px;
 }
@@ -62,7 +65,7 @@
 .main1 .text1 .p {
     font-size: 16px;
     font-weight: 500;
-
+    color: #252a34;
 }
 
 .main1 .text2 {
@@ -82,8 +85,8 @@
     background-color: #252a3411;
     width: 800px;
     border: 1px solid #252a344b;
-    border-radius: 4px 4px 0px 0px ;
-    padding: 20px ;
+    border-radius: 4px 4px 0px 0px;
+    padding: 20px;
 }
 
 .table .tableList {
@@ -92,21 +95,22 @@
     border-left: 1px solid #252a344b;
     border-right: 1px solid #252a344b;
     border-bottom: 1px solid #252a344b;
-    border-radius: 0px 0px 4px 4px ;
-    padding: 20px ;
+    border-radius: 0px 0px 4px 4px;
+    padding: 20px;
 }
 
-.table  .ul {
+.table .ul {
     margin-left: 40px;
     margin-top: 16px;
 }
 
 .table .li {
     margin-bottom: 8px;
+    color: #252a34;
 }
 
 .table .headLi {
-    margin-left: -16px;
+    margin-left: -12px;
 }
 
 .table .firstLi {
@@ -119,11 +123,6 @@
     text-decoration: none;
     font-weight: 500;
 }
-
-.table .ul .a:hover {
-    color: white;
-}
-
 
 .article {
     margin-top: 40px;
@@ -160,6 +159,8 @@
 
 .article .articleText .link {
     text-decoration: none;
+    color: #324589;
+    font-weight: 500;
 }
 
 .article .articleText .articleEnd {
@@ -167,7 +168,6 @@
     border-bottom: 1px solid #252a344b;
     padding-bottom: 20px;
 }
-
 
 .endContent {
     position: relative; 
@@ -179,7 +179,7 @@
 }
 
 .endContent .content {
-    background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
+    background: linear-gradient(270deg, #d1d1ee, #edf3f7);
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -207,4 +207,177 @@
     background-color: #324589;
     padding: 16px 75px;
     border-radius: 6px;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE (Lebar maksimal 1024px)
+   ========================================== */
+@media (max-width: 1024px) {
+    .mainMain {
+        margin-left: 0;
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main1 {
+        order: 1;
+        margin-top: 60px;
+    }
+
+    .table {
+        order: 2;
+    }
+
+    .article {
+        order: 3;
+        max-width: 100%;
+    }
+
+    .fixed {
+        order: 4;
+        position: static;
+        max-width: 100%;
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid #252a344b;
+    }
+
+    .endContent {
+        order: 5;
+        padding: 60px 0px 100px;
+    }
+
+    .main1 .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main1 .text2 .h1 {
+        max-width: 100%;
+        font-size: 26px;
+    }
+
+    .table .thead .h1,
+    .table .tableList {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .fixed .h1 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .fixed .link {
+        font-size: 16px;
+    }
+
+    .endContent .content {
+        padding: 60px 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .endContent .content h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .endContent .content p {
+        font-size: 18px;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE (Lebar maksimal 600px)
+   ========================================== */
+@media (max-width: 600px) {
+    .mainMain {
+        padding: 0 16px;
+    }
+
+    .main1 {
+        margin-top: 40px;
+    }
+
+    .main1 .text1 {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .main1 .text1 .name {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .main1 .text1 .date {
+        padding-left: 0;
+    }
+
+    .main1 .text1 .link {
+        margin-left: 0;
+    }
+
+    .main1 .text2 .h1 {
+        font-size: 22px;
+    }
+
+    .table .thead .h1 {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .table .tableList {
+        padding: 14px;
+    }
+
+    .table .ul,
+    .article .articleText .ul,
+    .fixed .ul {
+        margin-left: 20px;
+    }
+
+    .table .ul .a {
+        font-size: 14px;
+    }
+
+    .article .articleH1 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .article .articleH2 {
+        font-size: 18px;
+        margin-top: 36px;
+    }
+
+    .article .articleP {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .endContent {
+        padding: 40px 0px 80px;
+    }
+
+    .endContent .content {
+        padding: 40px 20px;
+        border-radius: 12px;
+    }
+
+    .endContent .content h1 {
+        font-size: 24px;
+    }
+
+    .endContent .content p {
+        font-size: 15px;
+    }
+
+    .endContent .content a {
+        font-size: 16px;
+        padding: 12px 40px;
+        width: 100%;
+        text-align: center;
+    }
 }

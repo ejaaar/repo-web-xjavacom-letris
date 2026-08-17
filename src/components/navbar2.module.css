@@ -50,7 +50,6 @@
     gap: 5.5px;
     list-style: none;
     align-items: center;
-    margin-top: -10px;
     padding: 0;
     transition: all 0.4s;
 }
@@ -65,7 +64,7 @@
 }
 
 .nav3 {
-    margin-top: -5px;
+    margin: 0;
 }
 
 .nav3 button {
@@ -200,6 +199,10 @@
     .nav2Active ul li {
         width: 100%;
         text-align: center;
+    }
+
+    .nav2Active ul li:hover {
+        background-color: rgb(233, 233, 233);
     }
 
     .nav2Active ul li a {
