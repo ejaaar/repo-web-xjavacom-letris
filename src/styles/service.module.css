@@ -147,11 +147,7 @@
     border-radius: 6px;
 }
 
-/* ==========================================
-    MEDIA QUERIES FOR RESPONSIVE (TABLET & HP)
-   ========================================== */
 
-/* Mode Tablet (Max Width: 1024px) */
 @media screen and (max-width: 1024px) {
     .main1 {
         margin-top: 20px;
@@ -228,7 +224,6 @@
     }
 }
 
-/* Mode Mobile / HP (Max Width: 768px) */
 @media screen and (max-width: 768px) {
     .main1 h1 {
         font-size: 32px;
@@ -269,8 +264,6 @@
 
     .main4 .card1 {
         flex-direction: column;
-        /* align-items: center; */
-        /* text-align: center; */
     }
 
     .main4 img {

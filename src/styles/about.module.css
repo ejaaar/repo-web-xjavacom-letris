@@ -4,7 +4,6 @@
     overflow-x: hidden;
 }
 
-/* Header Section */
 .main1 h1 {
     text-align: center;
     color: #252a34;
@@ -13,7 +12,6 @@
     margin: 0;
 }
 
-/* About Section */
 .main2 {
     display: flex;
     justify-content: center;
@@ -51,7 +49,6 @@
     color: #252a34;
 }
 
-/* Layanan Kami Header */
 .main3 {
     max-width: 920px;
     margin: 0 auto; 
@@ -72,7 +69,6 @@
     line-height: 1.2;
 }
 
-/* Cards Section */
 .main4 {
     display: flex;
     justify-content: center;
@@ -116,7 +112,6 @@
     margin: 0;
 }
 
-/* Tim Kami Header */
 .main5 {
     max-width: 1000px;
     margin: 0 auto 60px; 
@@ -137,7 +132,6 @@
     line-height: 1.2;
 }
 
-/* Grid Tim Kami */
 .teamGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -175,7 +169,6 @@
     line-height: 1.4;
 }
 
-/* KODE ASLI .endContent SESUAI PERMINTAAN */
 .endContent {
     display: flex;
     justify-content: center;
@@ -185,14 +178,13 @@
 }
 
 .endContent .content {
-    padding: 40px 60px;
+    padding: 100px 240px;
     background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
     display: flex;
     flex-direction: column;
     align-items: center; 
     border-radius: 16px;
     gap: 18px;
-    padding: 100px 240px;
 }
 
 .endContent .content h1 {
@@ -211,17 +203,11 @@
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 14px 18px;
     background-color: #324589;
     padding: 16px 75px;
     border-radius: 6px;
 }
 
-/* ==========================================
-    MEDIA QUERIES (TABLET & MOBILE)
-   ========================================== */
-
-/* Tablet (Max Width: 1024px) */
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 32px;
@@ -264,9 +250,44 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 32px 16px;
     }
+
+    .endContent {
+        padding: 20px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .endContent .content {
+        padding: 60px 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .endContent .content h1 {
+        font-size: 36px;
+        text-align: center;
+    }
 }
 
-/* Mobile / HP (Max Width: 600px) */
+@media screen and (max-width: 768px) {
+    .endContent .content {
+        padding: 40px 20px;
+    }
+
+    .endContent .content h1 {
+        font-size: 26px;
+    }
+
+    .endContent .content p {
+        font-size: 15px;
+    }
+
+    .endContent .content a {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .container {
         padding: 0 16px;
@@ -304,22 +325,5 @@
 
     .teamCard p {
         font-size: 13px;
-    }
-
-    .endContent .content {
-        padding: 40px 20px;
-    }
-
-    .endContent .content h1 {
-        font-size: 26px;
-    }
-
-    .endContent .content p {
-        font-size: 15px;
-    }
-
-    .endContent .content a {
-        padding: 12px 40px;
-        font-size: 16px;
     }
 }

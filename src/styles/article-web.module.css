@@ -38,6 +38,8 @@
 
 .main1 .img {
     width: 800px;
+    max-width: 100%;
+    height: auto;
 }
 
 .main1 .text1 {
@@ -57,7 +59,7 @@
 .main1 .text1 .link {
     font-size: 16px;
     font-weight: 500;
-    color: #252a34;
+    color: #B5366D;
     text-decoration: none;
     margin-left: 20px;
 }
@@ -84,6 +86,8 @@
     font-weight: 500;
     background-color: #252a3411;
     width: 800px;
+    max-width: 100%;
+    box-sizing: border-box;
     border: 1px solid #252a344b;
     border-radius: 4px 4px 0px 0px;
     padding: 20px;
@@ -92,6 +96,8 @@
 .table .tableList {
     background-color: #252a3411;
     width: 800px;
+    max-width: 100%;
+    box-sizing: border-box;
     border-left: 1px solid #252a344b;
     border-right: 1px solid #252a344b;
     border-bottom: 1px solid #252a344b;
@@ -174,23 +180,26 @@
     z-index: 99;    
     display: flex;
     justify-content: center;
-    padding: 100px 0px 170px;
+    padding: 30px 0px;
+    margin-bottom: 170px;
+    margin-top: 120px;
     background-color: white;
 }
 
 .endContent .content {
+    padding: 100px 240px;
     background: linear-gradient(270deg, #d1d1ee, #edf3f7);
     display: flex;
     flex-direction: column;
     align-items: center; 
     border-radius: 16px;
     gap: 18px;
-    padding: 100px 240px;
 }
 
 .endContent .content h1 {
     font-size: 48px;
     color: #252a34;
+    margin: 0;
 }
 
 .endContent .content p {
@@ -198,6 +207,7 @@
     text-align: center;
     color: #252a34;
     font-weight: 500;
+    margin: 0;
 }
 
 .endContent .content a {
@@ -209,10 +219,8 @@
     border-radius: 6px;
 }
 
-/* ==========================================
-   TABLET RESPONSIVE (Lebar maksimal 1024px)
-   ========================================== */
-@media (max-width: 1024px) {
+
+@media screen and (max-width: 1024px) {
     .mainMain {
         margin-left: 0;
         padding: 0 24px;
@@ -243,11 +251,6 @@
         border-top: 1px solid #252a344b;
     }
 
-    .endContent {
-        order: 5;
-        padding: 60px 0px 100px;
-    }
-
     .main1 .img {
         width: 100%;
         height: auto;
@@ -261,7 +264,6 @@
     .table .thead .h1,
     .table .tableList {
         width: 100%;
-        box-sizing: border-box;
     }
 
     .fixed .h1 {
@@ -273,6 +275,13 @@
         font-size: 16px;
     }
 
+    .endContent {
+        order: 5;
+        padding: 20px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
     .endContent .content {
         padding: 60px 40px;
         width: 100%;
@@ -280,19 +289,31 @@
     }
 
     .endContent .content h1 {
-        font-size: 32px;
+        font-size: 36px;
         text-align: center;
-    }
-
-    .endContent .content p {
-        font-size: 18px;
     }
 }
 
-/* ==========================================
-   MOBILE RESPONSIVE (Lebar maksimal 600px)
-   ========================================== */
-@media (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .endContent .content {
+        padding: 40px 20px;
+    }
+
+    .endContent .content h1 {
+        font-size: 26px;
+    }
+
+    .endContent .content p {
+        font-size: 15px;
+    }
+
+    .endContent .content a {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .mainMain {
         padding: 0 16px;
     }
@@ -357,27 +378,13 @@
         line-height: 24px;
     }
 
-    .endContent {
-        padding: 40px 0px 80px;
-    }
-
     .endContent .content {
-        padding: 40px 20px;
         border-radius: 12px;
     }
 
-    .endContent .content h1 {
-        font-size: 24px;
-    }
-
-    .endContent .content p {
-        font-size: 15px;
-    }
-
     .endContent .content a {
-        font-size: 16px;
-        padding: 12px 40px;
         width: 100%;
+        box-sizing: border-box;
         text-align: center;
     }
 }

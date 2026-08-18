@@ -89,17 +89,17 @@
     justify-content: center;
     padding: 30px 0px;
     margin-bottom: 170px;
+    margin-top: 120px;
 }
 
 .endContent .content {
-    padding: 40px 60px;
+    padding: 100px 240px;
     background: linear-gradient(270deg, #d1d1ee , #edf3f7 );
     display: flex;
     flex-direction: column;
     align-items: center; 
     border-radius: 16px;
     gap: 18px;
-    padding: 100px 240px;
 }
 
 .endContent .content h1 {
@@ -118,17 +118,11 @@
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 14px 18px;
     background-color: #324589;
     padding: 16px 75px;
     border-radius: 6px;
 }
 
-/* ==========================================
-    MEDIA QUERIES (TABLET & MOBILE)
-   ========================================== */
-
-/* Tablet (Max Width: 1024px) */
 @media screen and (max-width: 1024px) {
     .main1 {
         margin-top: 120px;
@@ -147,9 +141,44 @@
     .main3 {
         margin: 60px 32px;
     }
+
+    .endContent {
+        padding: 20px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .endContent .content {
+        padding: 60px 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .endContent .content h1 {
+        font-size: 36px;
+        text-align: center;
+    }
 }
 
-/* Mobile / HP (Max Width: 600px) */
+@media screen and (max-width: 768px) {
+    .endContent .content {
+        padding: 40px 20px;
+    }
+
+    .endContent .content h1 {
+        font-size: 26px;
+    }
+
+    .endContent .content p {
+        font-size: 15px;
+    }
+
+    .endContent .content a {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .main1 {
         margin-top: 100px;
@@ -172,23 +201,5 @@
 
     .main3 {
         margin: 40px 16px;
-    }
-
-    /* Penyesuaian .endContent untuk Mobile */
-    .endContent .content {
-        padding: 40px 20px;
-    }
-
-    .endContent .content h1 {
-        font-size: 26px;
-    }
-
-    .endContent .content p {
-        font-size: 15px;
-    }
-
-    .endContent .content a {
-        padding: 12px 40px;
-        font-size: 16px;
     }
 }

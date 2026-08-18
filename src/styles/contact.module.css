@@ -128,9 +128,6 @@
     background-color: #243366;
 }
 
-/* ==========================================
-    MEDIA QUERIES (TABLET & HP)
-   ========================================== */
 
 @media screen and (max-width: 1024px) {
     .container {

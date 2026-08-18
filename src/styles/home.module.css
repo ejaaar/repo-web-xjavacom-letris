@@ -393,11 +393,7 @@
     border-radius: 6px;
 }
 
-/* ==========================================
-    MEDIA QUERIES FOR RESPONSIVE (TABLET & HP)
-   ========================================== */
 
-/* Tablet View (Max Width: 1024px) */
 @media screen and (max-width: 1024px) {
     .main1 {
         padding-top: 120px;
@@ -529,7 +525,6 @@
     }
 }
 
-/* Mobile View / HP (Max Width: 768px) */
 @media screen and (max-width: 768px) {
     .main1 {
         padding-top: 100px;

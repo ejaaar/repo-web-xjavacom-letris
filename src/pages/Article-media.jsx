@@ -9,7 +9,6 @@ export default function ArticleMedia() {
         <main className={style.mainMain}>
             <Navbar/>
 
-            {/* Sidebar Recent Post */}
             <div className={style.fixed}>
                 <h1 className={style.h1}>Recent Post</h1>
 

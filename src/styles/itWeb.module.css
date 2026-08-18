@@ -68,6 +68,7 @@
     gap: 50px;
     width: 100%;
     max-width: 100%;
+    margin-left: 40px;
 }
 
 .main3 .card {
@@ -133,11 +134,7 @@
     border-radius: 6px;
 }
 
-/* ==========================================
-    MEDIA QUERIES FOR RESPONSIVE (TABLET & HP)
-   ========================================== */
 
-/* Mode Tablet (Max Width: 1024px) */
 @media screen and (max-width: 1024px) {
     .main1 {
         margin-top: 100px;
@@ -212,7 +209,7 @@
     }
 }
 
-/* Mode Mobile / HP (Max Width: 768px) */
+
 @media screen and (max-width: 768px) {
     .main1 {
         margin-top: 100px;
